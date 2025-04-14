@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText para inserir o nome da tarefa -->
+    <EditText
+        android:id="@+id/editTextNomeTarefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome da Tarefa"
+        android:inputType="text" />
+
+    <!-- Botão para adicionar tarefa -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Tarefa"
+        android:onClick="adicionarTarefa" />
+
+    <!-- ListView para exibir as tarefas -->
+    <ListView
+        android:id="@+id/listViewTarefas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
